@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index-page</title>
+    <style>
+        /* header-start */
+        header{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            background-color:pink;
+            justify-content: space-around;
+            border: 2px solid cornflowerblue;
+            box-shadow: 1px 1px l0px black;
+            position: sticky;top: 0px;
+        }
+        header ul{
+            display: flex;
+            list-style: none;            
+        }
+        header ul li{
+            flex:1
+        }
+      header ul li a{
+        text-decoration: none;
+      }
+      header ul li a:hover{
+        color: black;
+        box-shadow: 1px 1px 3px black;
+      }
+      /* header-end */
+      /* footer-start */
+      footer{
+        border: 2px black;
+        display: flex;
+        display: grid;
+        padding: 20px;
+        grid-template-columns: repeat(4,1fr);
+      }
+      h3{
+        text-align: center;
+      }
+     
+      footer ul li{
+        list-style: none;
+        text-align: center;
+
+      }
+      footer ul li a{
+        text-decoration: none;
+      }
+      /* section-start */
+      /* section-1 */
+      .section-1{
+            position:relative;
+            background-image: url(hero4.png);
+            height: 800px;
+            width: 100%; 
+            margin-top:2px;        
+        }
+        .text{
+            position: absolute;
+             top: 190px;
+             left: 4%;
+             line-height: 0.4px;
+             text-align: center;
+        }
+        .sec-logo{
+            position:relative;
+            
+        }
+        .logo-text{
+            position:absolute;
+            bottom: 0px;
+            left: 80px;
+        }
+
+        /* section-1 end */
+        /* section-2 */
+        .first{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .section-2{
+     background-color: #fff;
+     text-align: center;
+     border: 1px solid black;
+     box-shadow: 1px 1px 20px solid black;
+     width: 200px;
+     height: 180px;
+     margin: 10px;
+    }
+    .sec-logo{
+        margin-top: 20px;
+    }
+    /* section-2 end */ 
+
+     /* section-3 */
+        .section-3{
+            @media only screen and (max-width:100px;)  
+            margin: 0;
+            padding: 0;
+            display: flex;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            width: 95%;
+            padding-left:4%;
+        }
+        .product-card {
+            width: 220px;
+            height: 320px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin:20px;
+            padding: 10px;
+            line-height: 10px;
+
+        }
+        .product-card img {
+          width: 100%;
+          height: 200px;
+        }
+        .product-card:hover{
+            box-shadow: 2px 2px 10px black;
+            border-radius: 30px;
+        }
+       
+        .product-image {
+            max-width:200px;
+            height:200px;
+            margin-left: 10px;
+        }
+        .product-title {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            font-weight: normal;
+        }
+        .discription{
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .product-price {
+            font-size: 1.5rem;
+            color: #ff5733;
+            margin: 10px 0;
+        }
+        /* section-3 end */
+        /* section-4 */
+        .section-4{
+            position: relative;
+            background-image: url(b2.jpg);
+            width: 100%;
+            height: 300px;
+
+        }
+        .text-2{
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 400px;
+            
+        }
+        /* section-6 */
+        /* BANNER GRID */
+.banner-explore {
+    display: grid;
+    grid-template-columns: 15% 16% 16% 16% 16% 15%;
+    grid-template-rows: 59% 39%;
+    grid-gap: 10px;
+    margin: 50px;
+}
+
+.bannerCard {
+    display: grid;
+    margin: 50px;
+    grid-gap: 10px;
+}
+
+.bannerCard div {
+    background-color: darkmagenta;
+    border-radius: 10px;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 90px;
+}
+
+.bannerCard div:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background: url(b8.jpg);
+    height: 250px;
+}
+
+.bannerCard div:nth-child(2) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background: url(b5.jpg);
+    height: 250px;
+}
+
+.bannerCard div:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background: url(b4.jpg);
+    height: 180px;
+}
+
+.bannerCard div:nth-child(4) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background: url(b3.jpg);
+    height: 180px;
+}
+
+.bannerCard div:nth-child(5) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background: url(b9.jpg);
+    height: 180px;
+}
+
+/* newsletters */
+.newsletters {
+    background: url(b1.jpg);
+    display: flex;
+    flex: 2;
+    height: 200px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.newsletters .a {
+    color: white;
+    flex: 5;
+    padding-left: 30px;
+    padding-top: 60px;
+}
+.newsletters .b {
+    flex: 3;
+    padding-left: 50px;
+    padding-top: 68px;
+}
+.newsletters .b input, button {
+    padding: 10px;
+}
+.newsletters .b input {
+    border-radius: 10px 0 0 10px;
+}
+.newsletters .b button {
+    border-radius: 0 10px 10px 0;
+    background-color: #088178;
+    position: absolute;
+    right: -1;
+}
+        /* section-6 end */
+    </style>
+</head>
+<body>
+    <!-- header-start -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <!-- navigation-bar -->
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="Home-page.html">Home</a></li>
+                    <li><a href="shoppage.html">Shop</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="AboutUs.html">AboutUs</a></li>
+                    <li><a href="Contact-us.html">Contact-us</a></li>
+                    <li><a href="shoping-bag"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header-ends -->
+    <!--  Entire section-start -->
+    <!-- section-1 start -->
+    <section class="section-1">
+        <div class="text">
+            <h5 style="color: white; font-size: 30px;">Trade-in-offer sty</h2>
+            <h1 class="" style="color: black; font-size: 50px;">Super value deals</h1>
+            <h3 style="color: pink; font-size: 30px;">on all products</h3>
+            <h6 style="color: pink; font-size: 20px;">save more coupons & up to 70% off!</h6>
+            <span class="sec-logo">
+                <img src="button.png" alt="">
+                <h5 class="logo-text"> Shop-now</h5>
+            </span>
+        </div>
+    </section>
+    <!-- section-1 end -->
+    <!-- section-2 -->
+    <section class="first">
+        <div class="section-2">
+            <img src="f1.png" alt="">
+            <button style="background-color:linen">Free Shoping</button>
+        </div>
+        <div class="section-2">
+            <img src="f2.png" alt="">
+            <button style="background-color:mistyrose">Online Order</button>
+        </div>
+        <div class="section-2">
+            <img src="f3.png" alt="">
+            <button style="background-color:lavender">Save Money</button>
+        </div>
+        <div class="section-2">
+            <img src="f4.png" alt="">
+            <button style="background-color:lightgrey;">Promotion</button>
+        </div>
+        <div class="section-2">
+            <img src="f5.png" alt="">
+            <button style="background-color:powderblue;">Happy sell</button>
+        </div>
+        <div class="section-2">
+            <img src="f6.png" alt="">
+            <button style="background-color:beige;">24/7 help</button>
+        </div>
+        
+        </section>
+    <!-- section-2 end -->
+
+    <!-- section-3 -->
+    <h1 style="text-align: center;">Featured products</h1>
+    <h5 style="text-align: center;">Summer Collection New Modren Design</h5>
+    <section class="section-3">
+    <div class="product-card">
+        <img class="product-image" src="ff1.jpg" alt="Product Image">
+        <h2 class="product-title">adidas</h2>
+        <p class="discription">cartoon Astronut T-Shirt</p>
+        <p class="product-price">$78</p>
+        <span class="stars">
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <button style="position: relative; left: 80px;border-radius: 60px;" ><i class ="fa-solid fa-cart-shopping"></i></button> 
+        </span>
+    </div>
+     <div class="product-card">
+        <img class="product-image" src="ff2.jpg" alt="Product Image">
+        <h2 class="product-title">adidas</h2>
+        <p class="discription">cartoon Astronut T-Shirt</p>  
+              <p class="product-price">$78</p>
+        <span class="stars">
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+           <button style="position: relative; left: 80px;border-radius: 60px;" ><i class ="fa-solid fa-cart-shopping"></i></button> 
+        </span>
+    </div> 
+    <div class="product-card">
+        <img class="product-image" src="ff3.jpg" alt="Product Image">
+        <h2 class="product-title">adidas</h2>
+        <p class="discription">cartoon Astronut T-Shirt</p>
+        <p class="product-price">$78</p>
+        <span class="stars">
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <button style="position: relative; left: 80px;border-radius: 60px;" ><i class ="fa-solid fa-cart-shopping"></i></button> 
+        </span>
+      
+    </div> 
+    <div class="product-card">
+        <img class="product-image" src="ff4.jpg" alt="Product Image">
+        <h2 class="product-title">adidas</h2>
+        <p class="discription">cartoon Astronut T-Shirt</p>
+        <p class="product-price">$78</p>
+        <span class="stars">
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <button style="position: relative; left: 80px;border-radius: 60px;" ><i class ="fa-solid fa-cart-shopping"></i></button> 
+        </span>
+    </div> 
+    <div class="product-card">
+        <img class="product-image" src="ff5.jpg" alt="Product Image">
+        <h2 class="product-title">adidas</h2>
+        <p class="discription">cartoon Astronut T-Shirt</p>
+        <p class="product-price">$78</p>
+        <span class="stars">
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <button style="position: relative; left: 80px;border-radius: 60px;" ><i class ="fa-solid fa-cart-shopping"></i></button> 
+        </span>
+    </div>
+     <div class="product-card">
+        <img class="product-image" src="ff6.jpg" alt="Product Image">
+        <h2 class="product-title">adidas</h2>
+        <p class="discription">cartoon Astronut T-Shirt</p>
+        <p class="product-price">$78</p>
+        <span class="stars">
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <button style="position: relative; left: 80px;border-radius: 60px;" ><i class ="fa-solid fa-cart-shopping"></i></button> 
+        </span>
+    </div> 
+    <div class="product-card">
+        <img class="product-image" src="ff7.jpg" alt="Product Image">
+        <h2 class="product-title">adidas</h2>
+        <p class="discription">cartoon Astronut T-Shirt</p>
+        <p class="product-price">$78</p>
+        <span class="stars">
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <button style="position: relative; left: 80px;border-radius: 60px;" ><i class ="fa-solid fa-cart-shopping"></i></button> 
+        </span>
+    </div>
+     <div class="product-card">
+        <img class="product-image" src="ff8.jpg" alt="Product Image">
+        <h2 class="product-title">adidas</h2>
+        <p class="discription">cartoon Astronut T-Shirt</p>        
+        <p class="product-price">$78</p>
+        <span class="stars">
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <i class="fa-solid fa-star" style="color: yellow;"></i>
+            <button style="position: relative; left: 80px;border-radius: 60px;" ><i class ="fa-solid fa-cart-shopping"></i></button> 
+        </span>
+    </div> 
+    </div>
+    </section>
+    <!-- section3-end -->
+    
+    <!-- section-4 -->
+    <section class="section-4">
+        <!-- <img src="b2.jpg" width="100%"> -->
+    <div class="text-2">
+        <h6 style="color: white; text-align: center;">Repair Service</h6>
+        <h1 style="color: white; text-align: center; ">Up to 70% Off - All t-Shirts & Accessories</h1>
+        <button style="background-color: white;color: black; text-align: center; margin-left: 170px;">Explore More</button>
+     </div>
+    </section>
+    <!-- section-4 end -->
+
+    <!-- section-5 start -->
+    <h1 style="text-align: center;">New Arrivals</h1>
+    <h5 style="text-align: center; color:cornflowerblue;">Summer Collection New Modren Design</h5>
+    <section class="section-3">
+        <div class="product-card">
+            <img class="product-image" src="n1.jpg" alt="Product Image">
+            <h2 class="product-title">adidas</h2>
+            <p class="discription">cartoon Astronut T-Shirt</p>
+            <p class="product-price">$78</p>
+            <span class="stars">
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <button style="position: relative; left: 80px;border-radius: 60px;" ><i class ="fa-solid fa-cart-shopping"></i></button> 
+            </span>
+        </div>
+         <div class="product-card">
+            <img class="product-image" src="n2.jpg" alt="Product Image">
+            <h2 class="product-title">adidas</h2>
+            <p>cartoon Astronut T-Shirt</p>
+            <p class="product-price">$78</p>
+            <span class="stars">
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <button style="position: relative; left: 80px;border-radius: 60px;" ><i class ="fa-solid fa-cart-shopping"></i></button> 
+            </span>
+        </div> 
+        <div class="product-card">
+            <img class="product-image" src="n3.jpg" alt="Product Image">
+            <h2 class="product-title">adidas</h2>
+            <p>cartoon Astronut T-Shirt</p>
+            <p class="product-price">$78</p>
+            <span class="stars">
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <button style="position: relative; left: 80px;border-radius: 60px;" ><i class ="fa-solid fa-cart-shopping"></i></button> 
+            </span>
+        </div> 
+        <div class="product-card">
+            <img class="product-image" src="n4.jpg" alt="Product Image">
+            <h2 class="product-title">adidas</h2>
+            <p>cartoon Astronut T-Shirt</p>
+            <p class="product-price">$78</p>
+            <span class="stars">
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <button style="position: relative; left: 80px;border-radius: 60px;" ><i class ="fa-solid fa-cart-shopping"></i></button> 
+            </span>
+        </div> 
+        <div class="product-card">
+            <img class="product-image" src="n5.jpg" alt="Product Image">
+            <h2 class="product-title">adidas</h2>
+            <p>cartoon Astronut T-Shirt</p>
+            <p class="product-price">$78</p>
+            <span class="stars">
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <button style="position: relative; left: 80px;border-radius: 60px;" ><i class ="fa-solid fa-cart-shopping"></i></button> 
+            </span>
+        </div>
+         <div class="product-card">
+            <img class="product-image" src="n6.jpg" alt="Product Image">
+            <h2 class="product-title">adidas</h2>
+            <p>cartoon Astronut T-Shirt</p>
+            <p class="product-price">$78</p>
+            <span class="stars">
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <button style="position: relative; left: 80px;border-radius: 60px;" ><i class ="fa-solid fa-cart-shopping"></i></button> 
+            </span>
+        </div> 
+        <div class="product-card">
+            <img class="product-image" src="n7.jpg" alt="Product Image">
+            <h2 class="product-title">adidas</h2>
+            <p>cartoon Astronut T-Shirt</p>
+            <p class="product-price">$78</p>
+            <span class="stars">
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <button style="position: relative; left: 80px;border-radius: 60px;" ><i class ="fa-solid fa-cart-shopping"></i></button> 
+            </span>
+        </div>
+         <div class="product-card">
+            <img class="product-image" src="n8.jpg" alt="Product Image">
+            <h2 class="product-title">adidas</h2>
+            <p>cartoon Astronut T-Shirt</p>
+            <p class="product-price">$78</p>
+            <span class="stars">
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <button style="position: relative; left: 80px;border-radius: 60px;" ><i class ="fa-solid fa-cart-shopping"></i></button> 
+            </span>
+        </div>
+        </section>
+    <!-- section-5 end -->
+    <!-- section-6 start -->
+    <section class="section-6">
+        <section class="bannerCard">
+            <div>
+              <h5>crazy deal</h5>
+              <h2>buy 1 get 1 free</h2>
+              <h6>The best classic dress is on sale at core</h6>
+              <button>Learn More</button>
+            </div>
+            <div>
+              <h5>spring/Summer</h5>
+              <h2>upcomming season</h2>
+              <h6>The best classic dress is on sale at cara</h6>
+              <button>Collection</button>
+            </div>
+            <div>
+              <h2>SEASONAL SALE</h2>
+              <h3>Winter Collection 50% Off</h3>
+            </div>
+            <div>
+              <h2>NEW FOOTWEAR COLLECTION</h2>
+              <h3>Spring/Summer 2022</h3>
+            </div>
+            <div>
+              <h2>T-SHIRTS</h2>
+              <h3>New Trendy Prints</h3>
+            </div>
+          </section>
+          <section class="newsletters">
+            <div class="a">
+              <h2>Sing Up For Newsletters</h2>
+              <h4>get e-mail update about out latest shop and special offers</h4>
+            </div>
+            <div class="b">
+              <input type="email" placeholder="Your email address" />
+              <button>Sign Up</button>
+            </div>
+          </section>
+        <!-- section-6 end -->
+    <!-- Entire section-end -->
+    <!-- footer-stat -->
+    <footer>
+       <!-- <div class="fot-container"> -->
+        <div>
+            <img src="logo.png" alt="">
+            <h3>Contact</h3>
+            <p>Address:Wellington Road,Street 32.San Francisco</p>
+            <p>Phone:Wellington Road,Street 32.San Francisco</p>
+            <p>Hours:10:00-18:00.Mon - Sat</p>
+        </div>
+        <div>
+            <h3 style="margin-left: 30px;">About</h3>
+            <ul>
+                <li><a href="">About US</a></li>
+                <li><a href="">Delivery information</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms & Conditions</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 style="margin-left: 30px;">My account</h3>
+            <ul>
+            <li> <a href="">Sign in</a></li>
+            <li><a href="">Sign in</a></li>
+            <li><a href="">View Cart</a></li>
+            <li><a href="">My Whishlist</a></li>
+            <li><a href="">Track My Order</a></li>
+            <li><a href="">Help</a></li>
+        </ul>
+        </div>
+        <div>
+            <h3  style="margin-right:55%;">Install App</h3>
+            <span>
+                <p>From App Store or Google Play</p>
+                <img src="play.jpg" alt="" width="100px">
+                <img src="app.jpg" alt="" width="100px">
+                <p>Secured Payment Gateways</p>
+                <img src="pay.png" alt="">
+            </span>
+        </div>
+        <div>
+            <h3 style="text-align:start; line-height: 0.1px;">Follow Us</h3>
+            <span class="social-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-telegram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </span>
+        </div>
+       </div>
+    </footer>
+</body>
+</html>
